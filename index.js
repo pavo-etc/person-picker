@@ -5,7 +5,13 @@ var peopleRemaining = 0;
 
 function savePeople() {
     text = document.getElementById("people").value; 
-    people = text.split('\n');
+    lines = text.split('\n');
+    // Ignore empty lines
+    for (let i = 0; i < lines.length; i++) {
+        if (lines[i] !== "") {
+            people.push(lines[i]);
+        }
+    }
     peopleRemaining = people.length;
 }
 
