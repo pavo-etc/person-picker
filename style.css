@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    color: #f8f8f2;
+    background-color: #282A36;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+    background-color: #44475A;
+}
+
+textarea {
+    background-color: #44475a;
+    border: 2px solid #f8f8f2;
+    color: #f8f8f2
+}
+
+button {
+    width: 12em;
+    height: 3em;
+    border: 2px solid #bd93f9;
+    color: #f8f8f2;
+    background-color: #282A36;
+    transition: all 0.1s ease-in;
+    touch-action: manipulation;
+}
+
+button:hover {
+    background-color: #bd93f9;
+}
+
+button:active {
+    border-color: #282A36;
+    outline: none;
+}

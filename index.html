@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"> 
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Person Picker</title>
+</head>
+
+<body>
+    <script src="index.js"></script>
+		<header><h1>Person Picker</h1></header>
+		<br>
+        <textarea id="people" name="people" rows="10" cols="20" placeholder="Type list of names here..."></textarea><br>
+        <br>
+        <button id="savepeople" class="button-3" role="button" onclick="savePeople()">Save presenter list</button>
+        <br>
+        <h2>Presenting order</h2>
+        <button id="nextperson" class="button-3" role="button" onclick="getNextPerson()">Get next presenter</button>
+        <div id="queue"></div>
+	</body>
+</html>
