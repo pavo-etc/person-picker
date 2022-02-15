@@ -13,6 +13,7 @@ function savePeople() {
         }
     }
     peopleRemaining = people.length;
+    setNextPresenterButton();
 }
 
 function getNextPerson() {
@@ -22,5 +23,16 @@ function getNextPerson() {
     document.getElementById("queue").innerHTML += "<p>" + randomPerson + "</p>";
     people.splice(i, 1);
     peopleRemaining--;
+    setNextPresenterButton();
+
+}
+
+function setNextPresenterButton() {
+    let button = document.getElementById("nextperson");
+    if (peopleRemaining === 0) {
+        button.hidden = true;
+    } else {
+        button.hidden = false;
+    }
 }
 //let names = text.
