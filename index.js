@@ -29,10 +29,11 @@ function getNextPerson() {
 
 function setNextPresenterButton() {
     let button = document.getElementById("nextperson");
+    let header = document.getElementById("presentingorder");
     if (peopleRemaining === 0) {
         button.hidden = true;
     } else {
         button.hidden = false;
+        header.hidden = false;
     }
 }
-//let names = text.
