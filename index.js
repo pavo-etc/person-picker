@@ -19,12 +19,13 @@ function savePeople() {
 function getNextPerson() {
     if (peopleRemaining === 0) return;
     let i = Math.floor(Math.random() * peopleRemaining)
-    let randomPerson = people[i];
-    document.getElementById("queue").innerHTML += "<p>" + randomPerson + "</p>";
+    let personElement = document.createElement("p");
+    personElement.textContent = people[i]
+    document.getElementById("queue").appendChild(personElement);
+
     people.splice(i, 1);
     peopleRemaining--;
     setNextPresenterButton();
-
 }
 
 function setNextPresenterButton() {
