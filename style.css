@@ -1,35 +1,28 @@
-body {
-    text-align: center;
-    color: #f8f8f2;
-    background-color: #282A36;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 ::selection {
-    background-color: #44475A;
+    background-color: var(--grey);
 }
 
 textarea {
-    background-color: #44475a;
-    border: 2px solid #f8f8f2;
-    color: #f8f8f2
+    background-color: var(--grey);
+    border: 2px solid var(--white);
+    color: var(--purple)
 }
 
 button {
     width: 12em;
     height: 3em;
-    border: 2px solid #bd93f9;
-    color: #f8f8f2;
-    background-color: #282A36;
+    border: 2px solid var(--purple);
+    color: var(--white);
+    background-color: var(--background);
     transition: all 0.1s ease-in;
     touch-action: manipulation;
 }
 
 button:hover {
-    background-color: #bd93f9;
+    background-color: var(--purple);
 }
 
 button:active {
-    border-color: #282A36;
+    border-color: var(--background);
     outline: none;
 }
